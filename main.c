@@ -27,6 +27,19 @@ void printBoard(char board[][26], int boardSize)
     }
 }
 
+//checks whether the specified (row, col) lies within the board dimensions
+bool postitionIn(int boardSize,int row, int col)
+{
+    if(row>=0 && row<boardSize && col>=0 && col<boardSize)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
 
 
 int main(){
